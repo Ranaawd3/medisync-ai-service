@@ -96,18 +96,17 @@ else:
 # =====================================================
 # EasyOCR Reader — بيتحمل مرة واحدة عند البدء
 # =====================================================
-print("⏳ Loading EasyOCR model...")
+
 # ✅ بيتحمل بس لو مفيش Google Vision
 USE_EASYOCR = os.getenv("USE_EASYOCR", "false").lower() == "true"
 
 reader = None
-if USE_EASYOCR:
+if USE_EASYOCR and easyocr:
     print("⏳ Loading EasyOCR model...")
     reader = easyocr.Reader(['ar', 'en'], gpu=False)
     print("✅ EasyOCR loaded")
 else:
     print("ℹ️  EasyOCR disabled — using Google Vision only")
-print("✅ EasyOCR model loaded")
 
 # =====================================================
 # SYSTEM PROMPTS
