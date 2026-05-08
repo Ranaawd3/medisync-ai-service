@@ -14,7 +14,12 @@ from dotenv import load_dotenv
 from groq import Groq
 import psycopg2
 import psycopg2.pool
-import easyocr
+
+try:
+    import easyocr
+except ImportError:
+    easyocr = None
+
 from rapidfuzz import process
  
 app = FastAPI()
