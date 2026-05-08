@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+psycopg2-binary
+groq
+rapidfuzz
+python-multipart
+python-dotenv
+google-cloud-vision
+google-auth
