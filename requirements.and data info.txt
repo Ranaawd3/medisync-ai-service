@@ -1,13 +1,12 @@
 fastapi
 uvicorn
 psycopg2
-easyocr
 groq
 python-multipart
 ----------------------------------------------------
 data 
 Host: 127.0.0.1
-Port: 5433
+Port: 5432
 Database: drugdb
 User: postgres
 التفاعلات: 191,541
